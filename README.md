@@ -221,28 +221,6 @@ The `.gitignore` file already excludes it, but make sure:
 - ✅ Never share `.env` file with others
 - ✅ Use environment-specific `.env` files for different environments
 
-## Development
-
-### To Add Features
-
-1. Create a feature branch
-2. Modify `src/xilnex_api_sync.py`
-3. Test thoroughly with small data samples
-4. Document changes in this README
-
-### To Schedule Regular Syncs
-
-Use a task scheduler:
-
-**Windows (Task Scheduler):**
-- Create a scheduled task running: `python C:\path\to\xilnex_api_sync.py`
-- Set frequency (e.g., every 30 minutes)
-
-**Linux/macOS (crontab):**
-```bash
-*/30 * * * * cd /path/to/project && /path/to/venv/bin/python src/xilnex_api_sync.py
-```
-
 ## License
 
 This project is part of the data analysis portfolio.
